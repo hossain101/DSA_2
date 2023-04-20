@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add prepend method">
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add removeFirst method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,7 @@
       <workItem from="1681783109972" duration="1237000" />
       <workItem from="1681842177099" duration="3471000" />
       <workItem from="1681877017474" duration="2168000" />
-      <workItem from="1681949240042" duration="3628000" />
+      <workItem from="1681949240042" duration="4522000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681954008961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add removeFirst method">
+      <created>1681954263325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681954263325</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add upto append" />
     <MESSAGE value="Add prepend method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add prepend method" />
+    <MESSAGE value="Add removeFirst method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add removeFirst method" />
   </component>
 </project>

@@ -86,6 +86,7 @@ public class LinkedList {
         }
         Node temp = head;
         head = head.next;
+        temp.next = null; //this will remove the reference from the first item to the second item. If you don't do this, the first item will still be pointing to the second item, and the second item will still be pointing to the third item, and so on. This will cause a memory leak. instead this will result in garbage collection.
         length--;
         if (length == 0){
             tail = null;
