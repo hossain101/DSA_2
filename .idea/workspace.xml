@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add removeFirst method">
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add insert method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedList/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,22 +30,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "hossain-linkedList",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hossain-linkedList&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +61,8 @@
       <workItem from="1681783109972" duration="1237000" />
       <workItem from="1681842177099" duration="3471000" />
       <workItem from="1681877017474" duration="2168000" />
-      <workItem from="1681949240042" duration="7107000" />
+      <workItem from="1681949240042" duration="8340000" />
+      <workItem from="1681997965930" duration="3040000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681956958073</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add get method">
+      <created>1681963262774</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681963262774</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +109,8 @@
     <MESSAGE value="Add upto append" />
     <MESSAGE value="Add prepend method" />
     <MESSAGE value="Add removeFirst method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add removeFirst method" />
+    <MESSAGE value="Add get method" />
+    <MESSAGE value="Add set method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add set method" />
   </component>
 </project>
