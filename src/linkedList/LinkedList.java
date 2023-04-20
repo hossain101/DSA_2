@@ -77,7 +77,20 @@ public class LinkedList {
             head = newNode;
 
         }
-length++;
+        length++;
+    }
+
+    public Node removeFirst(){
+        if (length == 0){
+            return null;
+        }
+        Node temp = head;
+        head = head.next;
+        length--;
+        if (length == 0){
+            tail = null;
+        }
+        return temp; //because of this return statement, the value of the removed node can be accessed in App.java. If you don't want to return the value, you can just return null.
     }
 
     public void printList() {
