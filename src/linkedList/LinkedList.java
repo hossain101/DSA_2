@@ -46,6 +46,40 @@ public class LinkedList {
        length++;
     }
 
+    public Node removeLast(){
+        if (length == 0){
+            return null;
+        }
+        Node temp = head;
+        Node pre = head;
+        while (temp.next != null){
+            pre = temp;
+            temp = temp.next;
+        }
+        tail = pre;
+        tail.next = null;
+        length--;
+        if (length == 0){
+            head = null;
+            tail = null;
+        }
+        return temp; //because of this return statement, the value of the removed node can be accessed in App.java. If you don't want to return the value, you can just return null.
+
+    }
+
+    public void prepend(int value){
+        Node newNode = new Node(value);
+        if (length == 0){
+            head = newNode;
+            tail = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+
+        }
+length++;
+    }
+
     public void printList() {
         Node temp = head;
         while (temp != null) {
