@@ -94,6 +94,17 @@ public class LinkedList {
         return temp; //because of this return statement, the value of the removed node can be accessed in App.java. If you don't want to return the value, you can just return null.
     }
 
+    public Node get(int index){
+        if (index >= length || index < 0){
+            return null;
+        }
+        Node temp = head;
+        for (int i = 0; i < index; i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
     public void printList() {
         Node temp = head;
         while (temp != null) {
