@@ -63,6 +63,8 @@
       <workItem from="1681877017474" duration="2168000" />
       <workItem from="1681949240042" duration="8340000" />
       <workItem from="1681997965930" duration="3040000" />
+      <workItem from="1682014005135" duration="1344000" />
+      <workItem from="1682035011673" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681963262774</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add insert method">
+      <created>1682014021984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682014021984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +120,7 @@
     <MESSAGE value="Add removeFirst method" />
     <MESSAGE value="Add get method" />
     <MESSAGE value="Add set method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add set method" />
+    <MESSAGE value="Add insert method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add insert method" />
   </component>
 </project>
