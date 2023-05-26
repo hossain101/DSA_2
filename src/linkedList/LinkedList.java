@@ -261,5 +261,43 @@ public Node remove(int index) {
         return slow;
     }
 
+
+    //reverse a linked list from position m to n. Do it in one-pass. Diagram found in diagrams/singly_linked_list_reverse_between_two_specific_nodes.png
+    public void reverseBetween(int m, int n){
+        if(head == null)return;
+
+        Node beforeHead = new Node(0);
+        beforeHead.next = head;
+
+        Node nodeM = head;
+        Node beforeNodeM = beforeHead;
+        for(int i=0; i<m; i++){
+            nodeM = nodeM.next;
+            beforeNodeM = beforeNodeM.next;
+        }
+
+
+
+        for(int i = 0; i<n-m; i++){
+            Node nodeToBeMoved = nodeM.next;
+            nodeM.next = nodeToBeMoved.next;
+            nodeToBeMoved.next = beforeNodeM.next;
+            beforeNodeM.next = nodeToBeMoved;
+
+        }
+
+        head = beforeHead.next;
+
+
+
+
+
+
+
+
+
+
+    }
+
 }
 
