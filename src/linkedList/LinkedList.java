@@ -254,10 +254,6 @@ public Node remove(int index) {
             slow = slow.next;
         }
 
-
-
-
-
         return slow;
     }
 
@@ -288,16 +284,40 @@ public Node remove(int index) {
 
         head = beforeHead.next;
 
-
-
-
-
-
-
-
-
-
     }
 
+  public void partitionList(int x){
+        if (head==null)return;
+
+        Node beforeHeadNewListLessThanX = new Node(0);
+        Node beforeHeadNewListGreaterThanX = new Node(0);
+
+
+        //when the code runs, the endNodeNewListLessThanX will be the last node of the new list that contains all the nodes less than x. The endNodeNewListGreaterThanX will be the last node of the new list that contains all the nodes greater than x.
+        Node endNodeNewListLessThanX = beforeHeadNewListLessThanX;
+        Node endNodeNewListGreaterThanX = beforeHeadNewListGreaterThanX;
+
+        Node current = head;
+
+        while(current!=null){
+
+            if(current.value<x){
+                endNodeNewListLessThanX.next = current;
+                endNodeNewListLessThanX = current;
+            }
+            else{
+                endNodeNewListGreaterThanX.next = current;
+                endNodeNewListGreaterThanX = current;
+
+            }
+
+            current = current.next;
+
+        }
+        endNodeNewListGreaterThanX.next = null;
+        endNodeNewListLessThanX.next =  beforeHeadNewListGreaterThanX.next;
+
+        head = beforeHeadNewListLessThanX.next;
+  }
 }
 
