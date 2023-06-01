@@ -2,6 +2,9 @@ package linkedList;
 
 import node.Node;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LinkedList {
 
     // CREATE CLASS VARIABLES, NODE CLASS, AND CONSTRUCTOR HERE //
@@ -319,5 +322,56 @@ public Node remove(int index) {
 
         head = beforeHeadNewListLessThanX.next;
   }
+
+  /*public void removeDuplicates() {
+        Node current = head;
+        while (current != null) {
+            Node runner = current;
+            while (runner.next != null) {
+                if (runner.next.value == current.value) {
+                    runner.next = runner.next.next;
+                    length -= 1;
+                } else {
+                    runner = runner.next;
+                }
+            }
+            current = current.next;
+        }
+    }*/
+
+  public void removeDuplicates(){
+        if(head == null) return;
+
+            Node beforeHead = new Node(0);
+            beforeHead.next = head;
+
+        Node current = head;
+        Node beforeCurrent = beforeHead;
+        Node remover = new Node(0);
+
+    List<Integer> values = new ArrayList<>();
+        while(current!=null){
+
+            if(values.contains(current.value)){
+                beforeCurrent.next = current.next;
+                current = current.next;
+                length--;
+
+            }
+            else {
+                values.add(current.value);
+                current = current.next;
+                beforeCurrent = beforeCurrent.next;
+            }
+
+
+
+
+        }
+
+  }
+
+
+
 }
 
