@@ -16,74 +16,88 @@ public class DoublyLinkedList {
         length = 1;
     }
 
-    public void getHead(){
+    public void getHead() {
         System.out.println("Head: " + head.value);
     }
 
-    public void getTail(){
-        System.out.println("Tail: "+ tail.value);
+    public void getTail() {
+        System.out.println("Tail: " + tail.value);
     }
 
-    public void getLength(){
-        System.out.println("Length: "+ length);
+    public void getLength() {
+        System.out.println("Length: " + length);
     }
 
-    public void printList(){
-        if(head==null){
+    public void printList() {
+        if (head == null) {
             System.out.println("List is empty");
 
         }
-        Node temp =  head;
-        while (temp!=null){
+        Node temp = head;
+        while (temp != null) {
             System.out.println(temp.value);
             temp = temp.next;
         }
 
     }
 
-     public void append(int value){
-         Node newNode = new Node(value);
-        if(length == 0){
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
 
             head = newNode;
-            tail = newNode;}
-else {
+            tail = newNode;
+        } else {
             tail.next = newNode;
             newNode.previous = tail;
 
             tail = newNode;
         }
-length++;
-     }
+        length++;
+    }
 
 
+    public Node removeLast() {
 
-public Node removeLast(){
-
-        if(length ==0){
+        if (length == 0) {
             System.out.println("list is empty");
-return null;
+            return null;
 
-        }
-        else if(length==1){
+        } else if (length == 1) {
             head = null;
-            tail=null;
+            tail = null;
             length--;
             return head;
+        } else {
+            Node temp = tail;
+            tail = tail.previous;
+            tail.next = null;
+            temp.previous = null;
+            length--;
+            return temp;
         }
 
+
+    }
+
+    public void prepend(int value){
+        Node newNode = new Node(value);
+
+        if(head==null && tail==null){
+            head = newNode;
+            tail = newNode;
+        }
         else{
-Node temp = tail;
-tail = tail.previous;
-tail.next  =null;
-temp.previous = null;
-length--;
-return temp;
+            newNode.next = head;
+            head.previous = newNode;
+            head = newNode;
         }
 
 
-}
 
+
+
+    }
 
 
 }

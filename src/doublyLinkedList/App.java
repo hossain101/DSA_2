@@ -14,6 +14,15 @@ public class App {
 
 
         myDLL.printList();
+
+        System.out.println("This is after prepend.");
+
+        myDLL.prepend(69);
+
+        myDLL.printList();
+
+
+
     }
 
 }
