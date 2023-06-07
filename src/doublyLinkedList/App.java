@@ -21,6 +21,12 @@ public class App {
 
         myDLL.printList();
 
+        myDLL.removeFirst();
+
+        System.out.println("This is after removeFirst.");
+
+        myDLL.printList();
+
 
 
     }
