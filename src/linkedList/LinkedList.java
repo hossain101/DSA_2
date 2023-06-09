@@ -97,7 +97,6 @@ public class LinkedList {
         }
         return temp; //because of this return statement, the value of the removed node can be accessed in App.java. If you don't want to return the value, you can just return null.
     }
-
     public Node get(int index) {
         if (index >= length || index < 0) {
             return null;
@@ -108,7 +107,6 @@ public class LinkedList {
         }
         return temp;
     }
-
     public boolean set(int index, int value) {
         Node temp = get(index);
         if (temp != null) {
@@ -116,10 +114,7 @@ public class LinkedList {
             return true;
         }
         return false;
-
-
     }
-
     public boolean insert(int index, int value) {
         if (index < 0 || index > length) {
             return false;
@@ -139,8 +134,7 @@ public class LinkedList {
         length++;
         return true;
     }
-
-public Node remove(int index) {
+    public Node remove(int index) {
         if (index < 0 || index >= length) {
             return null;
         }
@@ -157,8 +151,6 @@ public Node remove(int index) {
         length--;
         return temp;
     }
-
-
     public void reverse(){
         if(length == 0){
             return;
@@ -166,19 +158,15 @@ public Node remove(int index) {
         Node temp = head;
         head = tail;
         tail = temp;
-
         Node after  = temp.next;
         Node before = null;
-
-
       for (int i = 0; i < length; i++) {
           after = temp.next;
           temp.next = before;
           before = temp;
           temp = after;
-
-      }}
-
+      }
+    }
     public void printList() {
         Node temp = head;
         while (temp != null) {
@@ -186,8 +174,6 @@ public Node remove(int index) {
             temp = temp.next;
         }
     }
-
-
     public void printAll() {
         if (length == 0) {
             System.out.println("Head: null");
@@ -204,46 +190,34 @@ public Node remove(int index) {
             printList();
         }
     }
-
-
     public Node findMiddleNode(){
-
         if(head ==null){
             return null;
         }
-
         Node slow,fast;
         slow=head;
         fast = head;
-
         while(fast!=null && fast.next!=null){
             slow = slow.next;
             fast = fast.next.next;
         }
         return slow;
     }
-
     public boolean hasLoop() {
         Node slow = head;
         Node fast = head;
-
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
-
             if (slow == fast) {
                 return true;
             }
         }
-
         return false;
     }
-
     public Node findKthFromEnd(int k){
-
         Node fast = head;
         Node slow = head;
-
         for(int i=0; i<k; i++){
 
             if(fast == null){
@@ -251,15 +225,12 @@ public Node remove(int index) {
             }
             fast = fast.next;
         }
-
         while (fast !=null){
             fast = fast.next;
             slow = slow.next;
         }
-
         return slow;
     }
-
 
     //reverse a linked list from position m to n. Do it in one-pass. Diagram found in diagrams/singly_linked_list_reverse_between_two_specific_nodes.png
     public void reverseBetween(int m, int n){
@@ -275,18 +246,13 @@ public Node remove(int index) {
             beforeNodeM = beforeNodeM.next;
         }
 
-
-
         for(int i = 0; i<n-m; i++){
             Node nodeToBeMoved = nodeM.next;
             nodeM.next = nodeToBeMoved.next;
             nodeToBeMoved.next = beforeNodeM.next;
             beforeNodeM.next = nodeToBeMoved;
-
         }
-
         head = beforeHead.next;
-
     }
 
   public void partitionList(int x){
@@ -294,7 +260,6 @@ public Node remove(int index) {
 
         Node beforeHeadNewListLessThanX = new Node(0);
         Node beforeHeadNewListGreaterThanX = new Node(0);
-
 
         //when the code runs, the endNodeNewListLessThanX will be the last node of the new list that contains all the nodes less than x. The endNodeNewListGreaterThanX will be the last node of the new list that contains all the nodes greater than x.
         Node endNodeNewListLessThanX = beforeHeadNewListLessThanX;
@@ -311,11 +276,8 @@ public Node remove(int index) {
             else{
                 endNodeNewListGreaterThanX.next = current;
                 endNodeNewListGreaterThanX = current;
-
             }
-
             current = current.next;
-
         }
         endNodeNewListGreaterThanX.next = null;
         endNodeNewListLessThanX.next =  beforeHeadNewListGreaterThanX.next;
@@ -364,14 +326,9 @@ public Node remove(int index) {
                 beforeCurrent = beforeCurrent.next;
             }
 
-
-
-
         }
 
   }
-
-
 
 }
 

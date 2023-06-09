@@ -11,6 +11,7 @@ public class App {
         myDLL.append(8);
         myDLL.append(9);
         myDLL.append(1);
+        myDLL.append(232323);
 
 
         myDLL.printList();
@@ -21,11 +22,15 @@ public class App {
 
         myDLL.printList();
 
-        myDLL.removeFirst();
+
 
         System.out.println("This is after removeFirst.");
 
         myDLL.printList();
+
+        System.out.println("At index 2 nigga: "+myDLL.get(2).value);
+        System.out.println("At index 4 nigga: "+myDLL.get(4).value);
+
 
 
 
