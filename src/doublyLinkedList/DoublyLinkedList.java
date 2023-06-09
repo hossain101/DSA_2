@@ -4,26 +4,21 @@ public class DoublyLinkedList {
     private Node head;
     private Node tail;
     private int length;
-
     public DoublyLinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;
         length = 1;
     }
-
     public void getHead() {
         System.out.println("Head: " + head.value);
     }
-
     public void getTail() {
         System.out.println("Tail: " + tail.value);
     }
-
     public void getLength() {
         System.out.println("Length: " + length);
     }
-
     public void printList() {
         if (head == null) {
             System.out.println("List is empty");
@@ -34,7 +29,6 @@ public class DoublyLinkedList {
             temp = temp.next;
         }
     }
-
     public void append(int value) {
         Node newNode = new Node(value);
         if (length == 0) {
@@ -47,7 +41,6 @@ public class DoublyLinkedList {
         }
         length++;
     }
-
     public Node removeLast() {
         if (length == 0) {
             System.out.println("list is empty");
@@ -66,7 +59,6 @@ public class DoublyLinkedList {
             return temp;
         }
     }
-
     public void prepend(int value) {
         Node newNode = new Node(value);
         if (head == null && tail == null) {
@@ -79,7 +71,6 @@ public class DoublyLinkedList {
         }
         length++;
     }
-
     public Node removeFirst() {
         if (length == 0) {
             System.out.println("list is empty");
@@ -99,8 +90,6 @@ public class DoublyLinkedList {
             return temp;
         }
     }
-
-
     public Node get(int index){
         Node temp = null;
         if(index<0 && index>length){
@@ -111,23 +100,23 @@ public class DoublyLinkedList {
              temp = head;
             for(int i=1; i<index; i++){
                 temp = temp.next;
-
             }
-
         }
         else if (index>length/2){
              temp = tail;
             for(int i=1; i>length-index;i++){
                 temp = temp.previous;
-
             }
-
         }
-
         return temp;
-
-
     }
-
+    public boolean set(int index, int value){
+        Node temp = get(index);
+        if(temp != null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
 }
 
