@@ -65,8 +65,9 @@ public class DoublyLinkedList {
             head = newNode;
             tail = newNode;
         } else {
-            newNode.next = head;
             head.previous = newNode;
+            newNode.next = head;
+
             head = newNode;
         }
         length++;
@@ -102,9 +103,10 @@ public class DoublyLinkedList {
                 temp = temp.next;
             }
         }
-        else if (index>length/2){
+        else {
              temp = tail;
-            for(int i=0; i>length-index;i++){
+             //for the loop to atleast run once the length and index are subtracted by 1
+            for(int i= 0; i<length-index-1;i++){
                 temp = temp.previous;
             }
         }
