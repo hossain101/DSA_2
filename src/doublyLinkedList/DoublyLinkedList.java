@@ -98,13 +98,13 @@ public class DoublyLinkedList {
 
         else if(index<length/2){
              temp = head;
-            for(int i=1; i<index; i++){
+            for(int i=0; i<index; i++){
                 temp = temp.next;
             }
         }
         else if (index>length/2){
              temp = tail;
-            for(int i=1; i>length-index;i++){
+            for(int i=0; i>length-index;i++){
                 temp = temp.previous;
             }
         }
@@ -117,6 +117,51 @@ public class DoublyLinkedList {
             return true;
         }
         return false;
+    }
+    public boolean insert(int index,int value){
+        if (index < 0 && index > length) return false;
+
+        else if(index==0){
+            prepend(value);
+            return true;
+        }
+        else if (index==length){
+            append(value);
+            return true;
+        }
+        else{
+            Node newNode = new Node(value);
+            Node before = get(index-1);
+            Node after = before.next;
+
+            newNode.next = after;
+            newNode.previous = before;
+
+            before.next = newNode;
+            after.previous = newNode;
+            length++;
+            return true;
+        }
+    }
+    public Node remove(int index){
+        if(index==0&&index>length){
+            return null;
+        }
+        else if(index==0){
+            return removeFirst();
+        }
+        else if(index==length-1){
+            return removeLast();
+        }
+        else{
+            Node temp =get(index);
+            temp.previous.next = temp.next;
+            temp.next.previous = temp.previous;
+            temp.next = null;
+            temp.previous= null;
+            length--;
+            return temp;
+        }
     }
 }
 
