@@ -165,5 +165,32 @@ public class DoublyLinkedList {
             return temp;
         }
     }
+
+//    public void swapFirstLast() {
+//        if (length < 2) return;
+//        int temp = head.value;
+//        head.value = tail.value;
+//        tail.value = temp;
+//    }
+    public void swapFirstLast(){
+        if(length==0){
+            System.out.println("List is empty");
+        }
+        else if(length==1){
+            System.out.println("Only one element in the list");
+        }
+        else{
+           head.next.previous = tail;
+           head.previous = tail.previous;
+           tail.previous.next = head;
+           tail.next=  head.next;
+           head.next = null;
+           tail.previous=null;
+           Node temp = head;
+           head = tail;
+           tail = temp;
+
+        }
+    }
 }
 
