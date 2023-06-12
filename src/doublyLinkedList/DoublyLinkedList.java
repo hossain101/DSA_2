@@ -232,6 +232,35 @@ public class DoublyLinkedList {
         }
 }
 
+    boolean isPalindrome(){
+        if(length==0){
+            return false;
+        }
+        else if(length==1){
+            return true;
+        }
+        else{
+            Node start = head;
+            Node end = tail;
+
+            int startValue=head.value;
+
+            for(int i=0; i<length/2; i++){
+                if(start.value==end.value){
+                    start=start.next;
+                    end=end.previous;
+
+                }
+                else {
+                    return false;
+                }
+
+            }
+            return true;
+        }
+    }
+
+
 
 }
 
