@@ -5,30 +5,15 @@ public class App {
     public static void main(String[] args) {
 
 
-        DoublyLinkedList myDLL = new DoublyLinkedList(7);
-
-
-   myDLL.prepend(6);
-           myDLL.prepend(5);
-              myDLL.prepend(4);
-                    myDLL.prepend(3);
-                        myDLL.prepend(2);
-                        myDLL.prepend(1);
-                            myDLL.prepend(0);
+        DoublyLinkedList myDLL = new DoublyLinkedList(0);
+        myDLL.append(1);
+myDLL.append(2);
 
 
 
 
+        System.out.println(myDLL.get(3).value);
 
-
-
-        myDLL.printList();
-
-
-        myDLL.remove(7);
-        System.out.println("After removing 0th index");
-
-        myDLL.printList();
     }
 
 }

@@ -93,7 +93,7 @@ public class DoublyLinkedList {
     }
     public Node get(int index){
         Node temp = null;
-        if(index<0 && index>length){
+        if(index<0 || index>length){
             return null;
         }
 
