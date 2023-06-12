@@ -192,5 +192,46 @@ public class DoublyLinkedList {
 
         }
     }
+
+//    public void reverse() {
+//        Node current = head;
+//        Node temp = null;
+//
+//        while (current != null) {
+//            temp = current.prev;
+//            current.prev = current.next;
+//            current.next = temp;
+//            current = current.prev;
+//        }
+//
+//        temp = head;
+//        head = tail;
+//        tail = temp;
+//    }
+    public void reverse(){
+        if(length==0){
+            System.out.println("List is empty");
+        }
+        if(length==1){
+            System.out.println("Only one element in the list");
+
+        }
+        else{
+            Node start = head;
+            Node end = tail;
+
+
+            for(int i=0; i<(length+1)/2;i++){
+                int startTemp = start.value;
+                start.value = end.value;
+                end.value = startTemp;
+                start = start.next;
+                end = end.previous;
+
+            }
+        }
+}
+
+
 }
 
