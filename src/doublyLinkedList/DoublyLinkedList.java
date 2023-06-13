@@ -261,6 +261,65 @@ public class DoublyLinkedList {
     }
 
 
+//
+//    public void swapPairs() {
+//        Node dummy = new Node(0);
+//        dummy.next = head;
+//        Node prev = dummy;
+//
+//        while (head != null && head.next != null) {
+//            Node firstNode = head;
+//            Node secondNode = head.next;
+//
+//            prev.next = secondNode;
+//            firstNode.next = secondNode.next;
+//            secondNode.next = firstNode;
+//
+//            secondNode.prev = prev;
+//            firstNode.prev = secondNode;
+//            if (firstNode.next != null) {
+//                firstNode.next.prev = firstNode;
+//            }
+//
+//            head = firstNode.next;
+//            prev = firstNode;
+//        }
+//
+//        head = dummy.next;
+//        if (head != null) head.prev = null;
+//    }
+//
+
+public void swapPairs(){
+        if(length==0){
+            System.out.println("List is empty");
+        }
+        else if(length==1){
+            System.out.println("Can't swap only one element fool.");
+        }
+        else {
+            Node start = head;
+            Node afterStart = head.next;
+
+            while(afterStart!=null){
+                int temp = start.value;
+                start.value = afterStart.value;
+                afterStart.value = temp;
+                start = afterStart.next;
+                if(start!=null){
+                    afterStart = start.next;
+                }
+                else{
+                    break;
+                }
+
+
+            }
+
+
+        }
+}
+
 
 }
 

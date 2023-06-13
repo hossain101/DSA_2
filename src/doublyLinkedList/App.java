@@ -12,15 +12,19 @@ public class App {
         myDLL.append(4);
         myDLL.append(5);
         myDLL.append(6);
+        myDLL.append(7);
+        myDLL.append(8);
+        myDLL.append(9);
+
+
         myDLL.printList();
 
-        System.out.println("after reverse");
+        System.out.println("After Swap");
 
-        myDLL.reverse();
+        myDLL.swapPairs();
         myDLL.printList();
 
 
-        System.out.println(myDLL.get(3).value);
 
     }
 
