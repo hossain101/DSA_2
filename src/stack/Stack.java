@@ -31,6 +31,22 @@ public class Stack {
         System.out.println("Height: "+ height);
     }
 
+    public void push(int value){
+        Node newNode = new Node(value);
+        if(height==0){
+            top = newNode;
+            bottom = newNode;
+
+        }
+
+        else{
+            newNode.next = top;
+            top = newNode;
+
+        }
+        height++;
+
+    }
 
 
 }

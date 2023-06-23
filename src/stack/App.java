@@ -8,6 +8,11 @@ public class App {
         myStack.getTop();
         myStack.getHeight();
 
+
+        myStack.push(3);
+        myStack.push(4);
+        myStack.push(1);
+
         myStack.printStack();
 
 
