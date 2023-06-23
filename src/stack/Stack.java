@@ -48,5 +48,23 @@ public class Stack {
 
     }
 
+    public Node pop(){
+        if(height==0){
+            System.out.println("Stack is empty");
+            return null;
+
+        }
+        else{
+            Node temp = top;
+            top = top.next;
+            temp.next = null;
+
+
+            height--;
+            return temp;
+        }
+
+    }
+
 
 }

@@ -16,6 +16,10 @@ public class App {
         myStack.printStack();
 
 
+        myStack.pop();
+
+        myStack.printStack();
+
 
     }
 }
