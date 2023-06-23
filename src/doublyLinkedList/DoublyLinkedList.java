@@ -295,7 +295,7 @@ public void swapPairs(){
             System.out.println("List is empty");
         }
         else if(length==1){
-            System.out.println("Can't swap only one element fool.");
+            System.out.println("Can't swap only one element.");
         }
         else {
             Node start = head;
