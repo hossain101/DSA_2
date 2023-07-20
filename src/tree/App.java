@@ -19,6 +19,6 @@ public class App {
         System.out.println(myBST.root.left.right.value);
 
 
-        System.out.println(myBST.contains(27));
+        System.out.println(myBST.contains(17));
     }
 }
