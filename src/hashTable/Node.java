@@ -1,12 +1,12 @@
-package node;
+package hashTable;
 
 public class Node {
+    public String key;
     public int value;
     public Node next;
 
-    public Node previous;
-
-    public Node(int value){
+    public Node(String key, int value){
+        this.key = key;
         this.value = value;
         this.next = null;
     }
