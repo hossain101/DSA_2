@@ -14,13 +14,18 @@ public class HashTableLC {
 
 
         //test for findDuplicates
-        ArrayList<Integer> array = new ArrayList<Integer>();
-        array.add(1);
-        array.add(2);
-        array.add(3);
-        array.add(2);
+//        ArrayList<Integer> array = new ArrayList<Integer>();
+//        array.add(1);
+//        array.add(2);
+//        array.add(3);
+//        array.add(2);
+//
+//        System.out.println("Duplicates : "+findDuplicates(array));
 
-        System.out.println("Duplicates : "+findDuplicates(array));
+
+        //test for firstNonRepeatingChar
+        String input = "a green apple";
+        System.out.println("First Non Repeating Character : "+firstNonRepeatingChar(input));
     }
 
 
@@ -67,4 +72,35 @@ public class HashTableLC {
         // return list
         return duplicates;
     }
+
+    public static Character firstNonRepeatingChar(String input){
+
+        // create hash table
+        HashMap<Character, Integer> myHashMap = new HashMap<Character, Integer>();
+
+        // loop through string
+
+        for(char i: input.toCharArray()){
+            // if item is in hash table, increment value
+            if(myHashMap.containsKey(i)){
+                myHashMap.put(i,myHashMap.get(i)+1);
+            }
+            // else add item to hash table
+            else{
+                myHashMap.put(i,1);
+            }
+        }
+        // loop through string
+        for(char i: input.toCharArray()){
+            // if item has value of 1, return item
+            if(myHashMap.get(i) == 1){
+                return i;
+            }
+        }
+        // return null
+        return null;
+
+    }
+
+
 }
