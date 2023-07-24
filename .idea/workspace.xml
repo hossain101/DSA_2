@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add tree method contains">
-      <change afterPath="$PROJECT_DIR$/Diagrams/hashMap_set_method.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashTable/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashTable/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hashTable/Node.java" afterDir="false" />
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add hashTable LC firstNonRepeatingChar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hashTable/HashTableLC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hashTable/HashTableLC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,24 +31,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hossain-hashTable&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hossain-hashTableLC",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\shoai\IdeaProjects\DSA_2\Diagrams" />
@@ -101,7 +98,10 @@
       <workItem from="1688858841353" duration="6630000" />
       <workItem from="1689569065326" duration="613000" />
       <workItem from="1689575123968" duration="1988000" />
-      <workItem from="1689836150935" duration="3425000" />
+      <workItem from="1689836150935" duration="4055000" />
+      <workItem from="1689929807211" duration="3100000" />
+      <workItem from="1690107075728" duration="4382000" />
+      <workItem from="1690192339969" duration="11550000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -341,7 +341,39 @@
       <option name="project" value="LOCAL" />
       <updated>1688943762032</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Add hashTable methods&#10;print table&#10;hash&#10;set&#10;get&#10;keys&#10;Node">
+      <option name="closed" value="true" />
+      <created>1689849202227</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1689849202227</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add hashTable LC itemInCommon Method">
+      <option name="closed" value="true" />
+      <created>1690108023665</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1690108023665</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add hashTable LC findDuplicates method">
+      <option name="closed" value="true" />
+      <created>1690114212260</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1690114212260</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add hashTable LC firstNonRepeatingChar">
+      <option name="closed" value="true" />
+      <created>1690224567351</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1690224567351</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,10 +391,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add reverse method" />
-    <MESSAGE value="Add findMiddleNode" />
-    <MESSAGE value="Add hasLoop method" />
-    <MESSAGE value="Add findKthFromEnd method to find the Kth term form the end" />
     <MESSAGE value="add reverseBetween to reverse all the nodes between 2 nodes" />
     <MESSAGE value="add method partition List" />
     <MESSAGE value="add method removeDuplicate" />
@@ -384,6 +412,10 @@
     <MESSAGE value="Add methods to LC" />
     <MESSAGE value="Add tree method insert" />
     <MESSAGE value="Add tree method contains" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tree method contains" />
+    <MESSAGE value="Add hashTable methods&#10;print table&#10;hash&#10;set&#10;get&#10;keys&#10;Node" />
+    <MESSAGE value="Add hashTable LC itemInCommon Method" />
+    <MESSAGE value="Add hashTable LC findDuplicates method" />
+    <MESSAGE value="Add hashTable LC firstNonRepeatingChar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hashTable LC firstNonRepeatingChar" />
   </component>
 </project>
