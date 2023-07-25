@@ -31,8 +31,13 @@ public class HashTableLC {
 //        System.out.println("First Non Repeating Character : "+firstNonRepeatingChar(input));
 
         //test for groupAnagrams
-        String[] stringArray = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        System.out.println("Group Anagrams : " + groupAnagrams(stringArray));
+//        String[] stringArray = {"eat"};
+//        System.out.println("Group Anagrams : " + groupAnagrams(stringArray));
+
+        //test for twoSum
+        int[] nums = {2,7,11,15};
+        int target = 9;
+        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
     }
 
 
@@ -212,6 +217,26 @@ public class HashTableLC {
 //        }
 //
 //
+    }
+
+    public static int[] twoSum(int[] nums, int target){
+
+        //create a hashTable
+        HashMap<Integer,Integer> myHashMap = new HashMap<Integer,Integer>();
+
+        //loop through nums
+        for(int i = 0; i < nums.length; i++){
+            //if target - nums[i] is in hashTable, return index of target - nums[i] and index of nums[i]
+            if(myHashMap.containsKey(target - nums[i])){
+                return new int[]{myHashMap.get(target - nums[i]),i};
+            }
+            //else add nums[i] to hashTable
+            else{
+                myHashMap.put(nums[i],i);
+            }
+        }
+        //return null
+        return new int[0];
     }
 
 }
