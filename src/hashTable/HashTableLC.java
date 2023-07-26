@@ -1,9 +1,6 @@
 package hashTable;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class HashTableLC {
 
@@ -237,6 +234,82 @@ public class HashTableLC {
         }
         //return null
         return new int[0];
+    }
+
+    public static int[] subArraySum(int[] nums, int target){
+
+            //create a hashTable
+            HashMap<Integer,Integer> myHashMap = new HashMap<Integer,Integer>();
+
+            //create a variable to store sum
+            int sum = 0;
+
+            //loop through nums
+            for(int i = 0; i < nums.length; i++){
+                //add nums[i] to sum
+                sum += nums[i];
+                //if sum is equal to target, return index of 0 and index of i
+                if(sum == target){
+                    return new int[]{0,i};
+                }
+                //if sum - target is in hashTable, return index of sum - target + 1 and index of i
+                if(myHashMap.containsKey(sum - target)){
+                    return new int[]{myHashMap.get(sum - target) + 1,i};
+                }
+                //else add sum to hashTable
+                else{
+                    myHashMap.put(sum,i);
+                }
+            }
+            //return null
+            return new int[0];
+    }
+
+    public static List<Integer> removeDuplicates(List<Integer> myList){
+
+        //create a hashSet from myList, and it will automatically remove duplicates as hashSet does not allow duplicates
+        HashSet<Integer> myHashSet = new HashSet<Integer>(myList);
+
+        //return a new ArrayList from myHashSet as the return type is List<Integer>
+        return  new ArrayList<Integer>(myHashSet);
+
+
+
+        // Create a HashSet to store unique elements
+//        HashSet<Integer> uniqueSet = new HashSet<>();
+//
+//        // Create a new ArrayList to store elements without duplicates
+//        ArrayList<Integer> newList = new ArrayList<>();
+//
+//        // Loop through the original list and add elements to the new list if they are not already in the HashSet
+//        for (Integer num : list) {
+//            if (uniqueSet.add(num)) {
+//                newList.add(num);
+//            }
+
+
+    }
+
+    public static Boolean hasUniqueChars(String input){
+
+
+        //create a hashSet
+        HashSet<Character> myHashSet = new HashSet<Character>();
+
+        //loop through input
+
+        for(char i: input.toCharArray()){
+            //if item is in hashSet, return false
+            if(myHashSet.contains(i)){
+                return false;
+            }
+            //else add item to hashSet
+            else{
+                myHashSet.add(i);
+            }
+        }
+
+        return true;
     }
 
 }
