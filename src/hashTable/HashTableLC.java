@@ -375,11 +375,46 @@ public class HashTableLC {
         for (int j : arr2){
             int complement = target - j;
             if (myHashMap.containsKey(complement)){
-                pairs.add(new int[]{complement,j        });
+                pairs.add(new int[]{complement,j});
             }
         }
 
         return pairs;
 
+    }
+
+    public  static int longestConsecutiveSequence(int[] input){
+
+            //create a hashSet
+            HashSet<Integer> myHashSet = new HashSet<Integer>();
+
+            //add each item in input to hashSet
+            for(int i: input){
+                myHashSet.add(i);
+            }
+
+            //create a variable to store longest sequence
+            int longestSequence = 0;
+
+            //loop through input
+            for(int i: input){
+                //if hashSet does not contain i - 1, create a variable to store current sequence
+                if(!myHashSet.contains(i - 1)){
+                    int currentSequence = 1;
+                    //create a variable to store current number
+                    int currentNum = i;
+                    //while hashSet contains currentNum + 1, increment currentSequence and currentNum
+                    while(myHashSet.contains(currentNum + 1)){
+                        currentSequence++;
+                        currentNum++;
+                    }
+                    //if currentSequence is greater than longestSequence, set longestSequence to currentSequence
+                    if(currentSequence > longestSequence){
+                        longestSequence = currentSequence;
+                    }
+                }
+            }
+            //return longestSequence
+            return longestSequence;
     }
 }
