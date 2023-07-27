@@ -32,9 +32,41 @@ public class HashTableLC {
 //        System.out.println("Group Anagrams : " + groupAnagrams(stringArray));
 
         //test for twoSum
-        int[] nums = {2,7,11,15};
-        int target = 9;
-        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
+//        int[] nums = {2,7,11,15};
+//        int target = 9;
+//        System.out.println(Arrays.toString(twoSum(new int[]{2, 7, 11, 15}, 9)));
+
+            //test for subArraySum
+//            int[] nums = {1,4,20,3,10,5};
+//            int target = 33;
+//            System.out.println(Arrays.toString(subArraySum(nums,target)));
+
+        //test for removeDuplicates
+//        List<Integer> myList = new ArrayList<Integer>();
+//        myList.add(1);
+//        myList.add(2);
+//        myList.add(3);
+//        myList.add(2);
+//        myList.add(4);
+//        myList.add(5);
+
+//        System.out.println("Remove Duplicates : "+removeDuplicates(myList));
+
+        //test for hasUniqueChars
+//        String input = "abcdefg";
+//        System.out.println("Has Unique Chars : "+hasUniqueChars(input));
+
+
+        //test for findPairs
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {2, 4, 6, 8, 10};
+        int target = 7;
+
+        List<int[]> pairs = findPairs(arr1, arr2, target);
+        for (int[] pair : pairs) {
+            System.out.println(Arrays.toString(pair));
+        }
+
     }
 
 
@@ -312,4 +344,42 @@ public class HashTableLC {
         return true;
     }
 
+    public static List<int[]> findPairs(int[] arr1, int[] arr2, int target) {
+//        Set<Integer> mySet = new HashSet<>();
+//        List<int[]> pairs = new ArrayList<>();
+//
+//        for (int num : arr1) {
+//            mySet.add(num);
+//        }
+//
+//        for (int num : arr2) {
+//            int complement = target - num;
+//            if (mySet.contains(complement)) {
+//                pairs.add(new int[]{complement, num});
+//            }
+//        }
+//
+//        return pairs;
+//
+
+        // create a hashMap
+
+        HashMap <Integer,Boolean> myHashMap = new HashMap<Integer,Boolean>();
+
+        for (int i : arr1){
+            myHashMap.put(i,true);
+        }
+
+        List<int[]> pairs = new ArrayList<>();
+
+        for (int j : arr2){
+            int complement = target - j;
+            if (myHashMap.containsKey(complement)){
+                pairs.add(new int[]{complement,j        });
+            }
+        }
+
+        return pairs;
+
+    }
 }
