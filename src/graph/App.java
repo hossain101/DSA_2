@@ -7,6 +7,17 @@ public class App {
 
         myGraph.addVertex("A");
         myGraph.addVertex("B");
+        myGraph.addVertex("C");
+
+        myGraph.addEdge("A","B");
+        myGraph.addEdge("A","C");
+        myGraph.addEdge("B","C");
+
+        myGraph.printGraph();
+
+        System.out.println("After removing ");
+
+        myGraph.removeEdge("A","B");
 
         myGraph.printGraph();
     }
