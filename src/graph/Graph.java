@@ -1,6 +1,9 @@
 package graph;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class Graph {
@@ -43,11 +46,36 @@ public class Graph {
 
             return true;
         }
-       return false;
+        return false;
 
 
     }
 
+    public boolean removeVertex(String vertex) {
+        if (adjList.get(vertex) == null) return false;
+
+        //Code below uses the forEach method
+    /*
+     for(String otherVertex : adjList.get(vertex)){
+         adjList.get(otherVertex).remove(vertex);
+
+     }*/
+
+        //regular for loop.
+
+        for (int i = 0; i < adjList.get(vertex).size(); i++) {
+            List<String> edgeList = adjList.get(vertex);
+
+            adjList.get(edgeList.get(i)).remove(vertex);
+
+        }
+
+        adjList.remove(vertex);
+
+        return true;
+
+
+    }
 
 
 }
