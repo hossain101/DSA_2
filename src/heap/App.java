@@ -16,16 +16,13 @@ public class App {
 
         System.out.println(myHeap.getHeap());
 
-        System.out.println("After inserting 100 into the heap");
-        myHeap.insert(100);
+        System.out.println("After Removing top");
 
-
-        System.out.println(myHeap.getHeap());
-
-
-        System.out.println("After inserting 75 into the heap");
-        myHeap.insert(75);
+        myHeap.remove();
 
         System.out.println(myHeap.getHeap());
+
     }
+
+
 }
