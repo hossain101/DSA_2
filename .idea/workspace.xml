@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add BST package">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bst/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add BST Node, rInsert,rContains method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bst/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bst/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +206,7 @@
       <workItem from="1693770134265" duration="3363000" />
       <workItem from="1693912534578" duration="1623000" />
       <workItem from="1693942610432" duration="3000" />
-      <workItem from="1693979209006" duration="7503000" />
+      <workItem from="1693979209006" duration="11355000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -394,14 +390,6 @@
       <option name="project" value="LOCAL" />
       <updated>1686653496330</updated>
     </task>
-    <task id="LOCAL-00029" summary="Add pop method to Stack">
-      <option name="closed" value="true" />
-      <created>1687529622069</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1687529622070</updated>
-    </task>
     <task id="LOCAL-00030" summary="Add methods to Queue">
       <option name="closed" value="true" />
       <created>1687629290596</created>
@@ -578,7 +566,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693913407857</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Add BST Node, rInsert,rContains method.">
+      <option name="closed" value="true" />
+      <created>1694051260006</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1694051260007</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial Stack code" />
     <MESSAGE value="Add push method to Stack" />
     <MESSAGE value="Add pop method to Stack" />
     <MESSAGE value="Add methods to Queue" />
@@ -633,6 +628,7 @@
     <MESSAGE value="Understanding  the flow of code" />
     <MESSAGE value="Add Recursion" />
     <MESSAGE value="Add BST package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BST package" />
+    <MESSAGE value="Add BST Node, rInsert,rContains method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BST Node, rInsert,rContains method." />
   </component>
 </project>

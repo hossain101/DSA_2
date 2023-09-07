@@ -9,7 +9,7 @@ public class App {
         myBST.rInsert(2);
         myBST.rInsert(1);
         myBST.rInsert(3);
-        myBST.rInsert(4);
+       // myBST.rInsert(4);
 
 
         //myBST.insert(27);
@@ -18,6 +18,13 @@ public class App {
         System.out.println("Root->left: "+ myBST.root.left.value);
         System.out.println("Root->right: "+ myBST.root.right.value);
        // System.out.println("Root->right->right: "+ myBST.root.right.right.right.value);
+
+        myBST.deleteNode(2);
+
+        System.out.println("\nAfter deleting");
+        System.out.println("Root : "+myBST.root.value);
+        System.out.println("Root->left: "+ myBST.root.left.value);
+        System.out.println("Root->right: "+ myBST.root.right);
 
 
     }
