@@ -25,6 +25,7 @@ myBST.rInsert(82);
         //myBST.insert(27);
 
         System.out.println(myBST.BFS());
+        System.out.println(myBST.DFSPOrder());
        // System.out.println("Root->right->right: "+ myBST.root.right.right.right.value);
 
 
