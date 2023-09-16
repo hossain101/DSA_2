@@ -10,13 +10,21 @@ public class App {
         myBST.rInsert(1);
         myBST.rInsert(3);
         myBST.rInsert(4);
+        myBST.rInsert(5);
+        myBST.rInsert(6);
+myBST.rInsert(47);
+myBST.rInsert(21);
+myBST.rInsert(76);
+myBST.rInsert(18);
+myBST.rInsert(27);
+myBST.rInsert(52);
+myBST.rInsert(82);
+
 
 
         //myBST.insert(27);
 
-        System.out.println("Root : "+myBST.root.value);
-        System.out.println("Root->left: "+ myBST.root.left.value);
-        System.out.println("Root->right: "+ myBST.root.right.value);
+        System.out.println(myBST.BFS());
        // System.out.println("Root->right->right: "+ myBST.root.right.right.right.value);
 
 
