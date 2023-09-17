@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="Add BST deleteNode method">
-      <change afterPath="$PROJECT_DIR$/src/treeTraversal/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/treeTraversal/TreeTraversal.java" afterDir="false" />
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="add breath first search Porder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bst/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/BST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "hossain-treeTraversal",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "20",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hossain-treeTraversal&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/shoai/IdeaProjects/DSA_2/src/Main.java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="bst" />
@@ -213,6 +212,7 @@
       <workItem from="1693912534578" duration="1623000" />
       <workItem from="1693942610432" duration="3000" />
       <workItem from="1693979209006" duration="7503000" />
+      <workItem from="1694911715524" duration="1423000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -396,22 +396,6 @@
       <option name="project" value="LOCAL" />
       <updated>1686653496330</updated>
     </task>
-    <task id="LOCAL-00029" summary="Add pop method to Stack">
-      <option name="closed" value="true" />
-      <created>1687529622069</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1687529622070</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Add methods to Queue">
-      <option name="closed" value="true" />
-      <created>1687629290596</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1687629290596</updated>
-    </task>
     <task id="LOCAL-00031" summary="Add methods to LC">
       <option name="closed" value="true" />
       <created>1688440636778</created>
@@ -580,7 +564,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693913407857</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add breath first search">
+      <option name="closed" value="true" />
+      <created>1694825828955</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1694825828956</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add breath first search Porder">
+      <option name="closed" value="true" />
+      <created>1694837112582</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1694837112582</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,8 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add push method to Stack" />
-    <MESSAGE value="Add pop method to Stack" />
     <MESSAGE value="Add methods to Queue" />
     <MESSAGE value="Add methods to LC" />
     <MESSAGE value="Add tree method insert" />
@@ -635,6 +633,8 @@
     <MESSAGE value="Add Recursion" />
     <MESSAGE value="Add BST package" />
     <MESSAGE value="Add BST deleteNode method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add BST deleteNode method" />
+    <MESSAGE value="add breath first search" />
+    <MESSAGE value="add breath first search Porder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add breath first search Porder" />
   </component>
 </project>
