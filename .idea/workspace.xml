@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="add breath first search Porder">
+    <list default="true" id="1bbc85eb-6357-4136-ba5b-2d5f3c24f5f1" name="Changes" comment="add depth first search postorder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bst/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bst/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/BST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +213,7 @@
       <workItem from="1693912534578" duration="1623000" />
       <workItem from="1693942610432" duration="3000" />
       <workItem from="1693979209006" duration="7503000" />
-      <workItem from="1694911715524" duration="1423000" />
+      <workItem from="1694911715524" duration="3161000" />
     </task>
     <task id="LOCAL-00001" summary="Add upto append">
       <created>1681949467911</created>
@@ -396,14 +397,6 @@
       <option name="project" value="LOCAL" />
       <updated>1686653496330</updated>
     </task>
-    <task id="LOCAL-00031" summary="Add methods to LC">
-      <option name="closed" value="true" />
-      <created>1688440636778</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1688440636778</updated>
-    </task>
     <task id="LOCAL-00032" summary="Add tree method insert">
       <option name="closed" value="true" />
       <created>1688942910314</created>
@@ -580,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694837112582</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add depth first search postorder">
+      <option name="closed" value="true" />
+      <created>1694918607107</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1694918607107</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +611,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add methods to Queue" />
     <MESSAGE value="Add methods to LC" />
     <MESSAGE value="Add tree method insert" />
     <MESSAGE value="Add tree method contains" />
@@ -635,6 +635,7 @@
     <MESSAGE value="Add BST deleteNode method" />
     <MESSAGE value="add breath first search" />
     <MESSAGE value="add breath first search Porder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add breath first search Porder" />
+    <MESSAGE value="add depth first search postorder" />
+    <option name="LAST_COMMIT_MESSAGE" value="add depth first search postorder" />
   </component>
 </project>
