@@ -4,6 +4,7 @@ package bst;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BST {
 
@@ -130,6 +131,26 @@ public boolean rContains(int value){
        }
        new Traverse(root);
        return results;
+    }
+
+
+    public Integer kthSmallest(int k) {
+        Stack<Node> stack = new Stack<>();
+        Node node = this.root;
+
+        while (!stack.isEmpty() || node != null) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.pop();
+            k -= 1;
+            if (k == 0) {
+                return node.value;
+            }
+            node = node.right;
+        }
+        return null;
     }
 
 }
