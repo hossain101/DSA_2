@@ -7,12 +7,136 @@ import java.util.List;
 
 public class LinkedList {
 
-    // CREATE CLASS VARIABLES, NODE CLASS, AND CONSTRUCTOR HERE //
-    //                                                          //
-    //                                                          //
-    //                                                          //
-    //                                                          //
-    //////////////////////////////////////////////////////////////
+
+    void bubbleSort() {
+        if (this.length < 2)
+            return;
+
+        Node sortedUntil = null;
+        while (sortedUntil != this.head.next) {
+            Node current = this.head;
+            while (current.next != sortedUntil) {
+                Node nextNode = current.next;
+                if (current.value > nextNode.value) {
+                    int temp = current.value;
+                    current.value = nextNode.value;
+                    nextNode.value = temp;
+                }
+                current = current.next;
+            }
+            sortedUntil = current;
+        }
+    }
+
+    void selectionSort() {
+        // If list length is less than 2, no need to sort
+        if (this.length < 2)
+            return;
+
+        // Initialize current node as head
+        Node current = this.head;
+
+        // Iterate over the list until the second last element
+        while (current.next != null) {
+
+            // Assume current node is the smallest
+            Node smallest = current;
+
+            // Start checking from the next node
+            Node innerCurrent = current.next;
+
+            // Inner loop to find smallest node in unsorted part
+            while (innerCurrent != null) {
+                // If a smaller node is found, update smallest
+                if (innerCurrent.value < smallest.value) {
+                    smallest = innerCurrent;
+                }
+                // Move to the next node
+                innerCurrent = innerCurrent.next;
+            }
+
+            // Swap current node and smallest node if they're not the same
+            if (smallest != current) {
+                int temp = current.value;
+                current.value = smallest.value;
+                smallest.value = temp;
+            }
+
+            // Move to next node in the list
+            current = current.next;
+        }
+
+        // After sorting, current is the last node. Update tail
+        this.tail = current;
+    }
+
+    public void insertionSort(){
+        if(this.length<2){
+            return;
+        }//if the list has less than 2 elements, it is already sorted.
+
+        //start with a sorted list containing only the first element
+
+        Node sortedListHead = head;
+
+        //start with the second element in the unsorted list
+
+        Node unsortedListHead = head.next;
+
+
+        //mark the end of the sorted list as null
+        sortedListHead.next = null;
+
+        //Iterate over the unsorted list
+
+        while(unsortedListHead!=null){
+            //Take the first element in the unsorted list
+            Node current =  unsortedListHead;
+            //move to the next element in the unsorted list.
+            unsortedListHead = unsortedListHead.next;
+
+
+            //if the current element is smaller than first element of the sorted list
+            if(current.value<sortedListHead.value){
+                //element at the beginning of the sorted list
+                current.next = sortedListHead;
+                //update the sorted list head
+
+                sortedListHead=current;
+
+
+            }
+
+            else {
+                //start at the beginning of the sorted list
+                Node searchPointer = sortedListHead;
+
+                //search for the correct insertion point
+
+                while(searchPointer.next!=null&& current.value >searchPointer.next.value){
+                //move to the next element in the sorted list.
+                    searchPointer = searchPointer.next;
+                }
+                //insert the current after the search pointer
+
+                current.next  = searchPointer.next;
+                searchPointer.next = current;
+
+            }
+
+        }
+
+        head = sortedListHead;
+        Node temp = head;
+        while (temp.next!=null){
+            temp =  temp.next;
+
+        }
+
+        tail = temp;
+
+
+    }
     private Node head;
     private Node tail;
     private int length;
