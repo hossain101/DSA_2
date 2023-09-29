@@ -19,11 +19,22 @@ public class App {
 //
 //        System.out.println(Arrays.toString(arr));
 
-        InsertionSort myInsertionSort  =new InsertionSort();
+//        InsertionSort myInsertionSort  =new InsertionSort();
+//
+//        myInsertionSort.insertionSort(arr);
+//
+//        System.out.println(Arrays.toString(arr));
 
-        myInsertionSort.insertionSort(arr);
+        int[] arr1 = {1,3,5,7,9};
+        int[] arr2 = {2,4,6,8,10};
 
-        System.out.println(Arrays.toString(arr));
+
+
+        MergeSort myMergeSort = new MergeSort();
+
+      int[] sorted =   myMergeSort.mergeSort(arr);
+
+        System.out.println(Arrays.toString(sorted));
 
 
 
