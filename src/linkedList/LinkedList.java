@@ -137,6 +137,87 @@ public class LinkedList {
 
 
     }
+
+public void merge(LinkedList otherList){
+        //get the head node of the other linked list
+
+    Node otherHead =  otherList.getHead();
+
+    //create a dummy node to serve as the head of the merged linked list.
+
+    Node dummy = new Node(0);
+
+    //create a current node to keep track of the last node in the merged list.
+
+    Node current = dummy;
+
+    //iterate through both input linked lists as long as they are not null
+
+    while(head!=null && otherHead!=null){
+        //compare the values of the head node of the two lists.
+
+        if(head.value<otherHead.value){
+            //append the smaller node to the merged list and  update the head of that list to its next node.
+            current.next = head;
+            head = head.next;
+
+        }
+        else{
+            //append the smaller node to the merged list and
+            //update the head of that list ot its next node
+            current.next = otherHead.next;
+            otherHead= otherHead.next;
+
+        }
+
+        //update the current node to be the last node in the mered list
+
+        current = current.next;
+
+
+
+
+    }
+
+    //if either of the input lists still has nodes, append them to the end of the merged list
+
+    if(head!=null){
+        current.next = head;
+
+    }else
+    {
+        current.next = otherHead;
+
+        //if current list is empty , update tail to last node o other list
+        //otherwise tail remains the last node fo the current list
+        tail = otherList.getTail();
+    }
+
+    //update the head of the current list to be the second node
+    //in the merged list (since the first node is the dummy node)
+
+    head =  dummy.next;
+
+    //update the length of the current list to reflect the merged list
+
+    length += otherList.getLength();
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private Node head;
     private Node tail;
     private int length;
