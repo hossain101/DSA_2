@@ -25,17 +25,24 @@ public class App {
 //
 //        System.out.println(Arrays.toString(arr));
 
-        int[] arr1 = {1,3,5,7,9};
-        int[] arr2 = {2,4,6,8,10};
+//        int[] arr1 = {1,3,5,7,9};
+//        int[] arr2 = {2,4,6,8,10};
+//
+//
+//
+//        MergeSort myMergeSort = new MergeSort();
+//
+//      int[] sorted =   myMergeSort.mergeSort(arr);
+//
+//        System.out.println(Arrays.toString(sorted));
 
+//
 
+        QuickSort myQuickSort = new QuickSort();
 
-        MergeSort myMergeSort = new MergeSort();
+        myQuickSort.quickSort(arr,0,arr.length-1);
 
-      int[] sorted =   myMergeSort.mergeSort(arr);
-
-        System.out.println(Arrays.toString(sorted));
-
+        System.out.println(Arrays.toString(arr));
 
 
 
